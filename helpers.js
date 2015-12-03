@@ -10,7 +10,6 @@ var path = require('path'),
     _ = require('underscore'),
     color = require('tinycolor2'),
     cheerio = require('cheerio'),
-    colors = require('colors'),
     jsonxml = require('jsontoxml'),
     sizeOf = require('image-size'),
     async = require('async'),
@@ -48,9 +47,9 @@ var path = require('path'),
 
             if (options.logging && message) {
                 _.each(message.split(' '), function (item) {
-                    newMessage += ' ' + (/^\d+x\d+$/gm.test(item) ? colors.magenta(item) : item);
+                    newMessage += ' ' + item;
                 });
-                console.log(colors.green('[Favicons]') + ' ' + context.yellow + ': ' + newMessage + '...');
+                console.log('[Favicons]' + ' ' + context.yellow + ': ' + newMessage + '...');
             }
         }
 
