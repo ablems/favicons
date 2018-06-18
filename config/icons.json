@@ -24,6 +24,12 @@
       "transparent": true,
       "rotate": false
     },
+    "android-chrome-512x512.png": {
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "rotate": false
+    },
     "android-chrome-72x72.png": {
       "width": 72,
       "height": 72,
